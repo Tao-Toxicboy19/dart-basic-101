@@ -3,7 +3,8 @@ void main() {
 }
 
 void app() {
-  print(getName("Thewarat","Khonhan"));
+  var listx = getList();
+  print(listx);
 }
 
 void myFunctionV1() {
@@ -45,4 +46,14 @@ int getAge() {
 String getName(String firstName, String lastName) {
   String fullName = firstName + lastName;
   return fullName.toUpperCase();
+}
+
+List<int> getList() {
+  List<int> myNumber = [];
+
+  for (var i = 0; i < 10; i++) {
+    myNumber.add(i * 50);
+  }
+
+  return myNumber;
 }
