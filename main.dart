@@ -3,8 +3,8 @@ void main() {
 }
 
 void app() {
-  var listx = getList();
-  print(listx);
+  // myFunctionV6(x: 60, y: "Prayut", z: 626.212);
+  calculateSalary(eName: "Thewarat",salary: 20000,position: "manager",member: true);
 }
 
 void myFunctionV1() {
@@ -54,6 +54,30 @@ List<int> getList() {
   for (var i = 0; i < 10; i++) {
     myNumber.add(i * 50);
   }
-
   return myNumber;
+}
+
+// null safety and named parameters
+
+void myFunctionV6({int? x, String? y, double? z}) {
+  print("my data ${x} ${y} ${z}");
+}
+
+void calculateSalary(
+    {String eName = "",
+    double salary = 0,
+    String position = "",
+    bool member = true}) {
+  (salary >= 15000) ? salary = salary - 750 : salary = salary - 500;
+  print("Salary = ${salary}");
+  salary = (member) ? salary - (salary * 0.05) : salary;
+  print("เงินเดือนหลังหัก กองทุน ${salary}");
+  salary += position == "staff"
+      ? 1500
+      : position == "supervisor"
+          ? 2000
+          : position == "manager"
+              ? 3000
+              : 0;
+  print("เงินเดือนรวม ${salary}");
 }
