@@ -4,7 +4,9 @@ void main() {
 
 void app() {
   // myFunctionV6(x: 60, y: "Prayut", z: 626.212);
-  calculateSalary(eName: "Thewarat",salary: 20000,position: "manager",member: true);
+  // calculateSalary(
+  //     eName: "Thewarat", salary: 20000, position: "manager", member: true);
+  myList();
 }
 
 void myFunctionV1() {
@@ -81,3 +83,19 @@ void calculateSalary(
               : 0;
   print("เงินเดือนรวม ${salary}");
 }
+
+void myList() {
+  List<String> myFriend = ["Prawit", "Sutanan", "Koschakon", "Narongsak"];
+  for (var name in myFriend) {
+    print(name);
+  }
+  myFriend.forEach((String n) {
+    print("เพื่อนฉันชื่อว่า ${friendName(n)}");
+    (n == "Prawit") ? print("คนดีย์") : print("คนดีย์สอง");
+  });
+}
+
+var friendName = (String name) {
+  return name.toUpperCase();
+};
+
