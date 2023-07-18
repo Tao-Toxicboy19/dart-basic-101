@@ -1,3 +1,7 @@
 void main() {
-  print("Hello Git 101");
+  app();
+}
+
+app() {
+  print("hello world");
 }
