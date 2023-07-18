@@ -3,8 +3,10 @@ void main() {
 }
 
 void app() {
-  // MyFunctionV3(523.22, 5454.111, "Hello");
-  MyfunctionV5("Hello Prawit");
+  int age = getAge();
+  print(age);
+  print("My Age ${getAge()}");
+  print(getName());
 }
 
 void myFunctionV1() {
@@ -33,4 +35,15 @@ void MyFunctionV4(double sum) {
 
 void MyfunctionV5(String name) {
   print("${name.toUpperCase()}");
+}
+
+// return type
+
+int getAge() {
+  return 15;
+}
+
+String getName() {
+  String MyName = "Hello John Onyx";
+  return MyName;
 }
