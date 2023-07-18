@@ -2,7 +2,9 @@ void main() {
   app();
 }
 
-app() {
-  print("hello world");
+void app() {
+  String stdName = "thewarat";
+  print("I am ${stdName} in my function");
 }
-  
+
+
