@@ -3,10 +3,7 @@ void main() {
 }
 
 void app() {
-  int age = getAge();
-  print(age);
-  print("My Age ${getAge()}");
-  print(getName());
+  print(getName("Thewarat","Khonhan"));
 }
 
 void myFunctionV1() {
@@ -43,7 +40,9 @@ int getAge() {
   return 15;
 }
 
-String getName() {
-  String MyName = "Hello John Onyx";
-  return MyName;
+// parameters and return type
+
+String getName(String firstName, String lastName) {
+  String fullName = firstName + lastName;
+  return fullName.toUpperCase();
 }
