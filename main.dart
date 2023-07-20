@@ -97,5 +97,5 @@ void myList() {
 
 var friendName = (String name) {
   return name.toUpperCase();
+  print("Hello");
 };
-
