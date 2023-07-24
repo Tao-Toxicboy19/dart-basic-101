@@ -1,3 +1,7 @@
 void main() {
-  print("hello");
+  app();
+}
+
+app() {
+  print("Hello");
 }
