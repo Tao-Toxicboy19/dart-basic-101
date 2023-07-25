@@ -9,16 +9,21 @@ app() {
   // print(check(weight: 200));
   // (check(weight: 200)) ? print("ไอ้อ้วน") : print("เบิ่งดี");
   // print(createList());
-  // String fullName({String? firstname, String? lastname}) {
-  //   return (firstname ?? '') + (lastname ?? '');
-  // }
+  String fullName(String firstname, String lastname) {
+    return (firstname + lastname).toUpperCase();
+  }
 
   // print(fullName(firstname: "Prayut", lastname: "Chanocha"));
 
-  List<int> myScore = [70, 55, 65, 80];
-  myScore.forEach((int m) {
-    // print("My Score ${m}");
-    (m >= 70) ? print("Nice one Guys ${m}") : print("Noob Guys ${m}");
+  // List<int> myScore = [70, 55, 65, 80];
+  // myScore.forEach((int m) {
+  //   // print("My Score ${m}");
+  //   (m >= 70) ? print("Nice one Guys ${m}") : print("Noob Guys ${m}");
+  // });
+
+  List<String> myFriend = ['john', 'tayler', 'david'];
+  myFriend.forEach((element) {
+    print(fullName("${element} ", "hello"));
   });
 }
 
