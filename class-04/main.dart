@@ -9,9 +9,9 @@ app() {
   // print(check(weight: 200));
   // (check(weight: 200)) ? print("ไอ้อ้วน") : print("เบิ่งดี");
   // print(createList());
-  String fullName(String firstname, String lastname) {
-    return (firstname + lastname).toUpperCase();
-  }
+  // String fullName(String firstname, String lastname) {
+  //   return (firstname + lastname).toUpperCase();
+  // }
 
   // print(fullName(firstname: "Prayut", lastname: "Chanocha"));
 
@@ -21,11 +21,21 @@ app() {
   //   (m >= 70) ? print("Nice one Guys ${m}") : print("Noob Guys ${m}");
   // });
 
-  List<String> myFriend = ['john', 'tayler', 'david'];
-  myFriend.forEach((element) {
-    print(fullName("${element} ", "hello"));
-  });
+  // List<String> myFriend = ['john', 'tayler', 'david'];
+  // myFriend.forEach((element) {
+  //   print(fullName("${element} ", "hello"));
+  // });
+
+  hellos("Prayut","big");
+  print(sumNumber(5, 1));
 }
+
+chooseText(String name, String size) =>
+    (size == "big") ? name.toUpperCase() : name.toLowerCase();
+
+sumNumber(int a, int b) => a + b;
+
+hellos(String name,String size) => print("Hello Guys ${chooseText(name,size)}");
 
 adder(int a, int b, int c, [String? x = "บวก"]) {
   print("${a + b + c} $x");
