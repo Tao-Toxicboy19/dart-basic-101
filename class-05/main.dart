@@ -25,6 +25,7 @@ void main() {
   ////////////////////////
   var book = Book();
   book.setBookData("Bitcoin", 20, "Prayut", 200);
+  book.changeAuthor("John Doe");
 }
 
 class Book {
@@ -44,6 +45,11 @@ class Book {
 
   viewBook() => print(
       "ชื่อหนังสือ ::${title} จำนวนหน้า ::${pages} ราคา :: ${price} ผู้แต่ง ::${author}");
+
+  changeAuthor(String author) {
+    this.author = author;
+    viewBook();
+  }
 }
 
 class Person {
