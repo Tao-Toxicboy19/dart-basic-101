@@ -23,9 +23,10 @@ void main() {
   // print(person_1.name);
   // print(person_1.gender);
   ////////////////////////
-  var book = Book();
-  book.setBookData("Bitcoin", 20, "Prayut", 200);
-  book.changeAuthor("John Doe");
+  var bk = Book();
+  bk.setBookData("Bitcoin", 20, "Prayut", 200);
+  bk.changeAuthor("John Doe");
+  print("รวมคารวม คือ :::${bk.checkBookPrice(20)} บาท");
 }
 
 class Book {
@@ -49,6 +50,11 @@ class Book {
   changeAuthor(String author) {
     this.author = author;
     viewBook();
+  }
+
+  checkBookPrice(int qty) {
+    int totalPrice = qty * price!;
+    return totalPrice;
   }
 }
 
