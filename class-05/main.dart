@@ -55,12 +55,12 @@ class Book {
 
   checkBookPrice(int qty) {
     int totalPrice = qty * price!;
+    print("${checkSend(qty)} บาท");
     return totalPrice;
   }
 
   checkSend(int qty) {
-    String message = (pages! >= 100) ? "ค่าจัดส่ง: ${qty * 10} บาท" : "ส่งฟรี";
-    print(message);
+    return (pages! >= 100) ? "ค่าจัดส่ง: ${qty * 10} บาท" : "ส่งฟรี";
   }
 }
 
