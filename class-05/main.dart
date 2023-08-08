@@ -27,7 +27,7 @@ void main() {
   bk.setBookData("Bitcoin", 20, "Prayut", 200);
   bk.changeAuthor("John Doe");
   print("รวมคารวม คือ :::${bk.checkBookPrice(20)} บาท");
-  bk.checkSend(150, 5);
+  bk.checkSend(5);
 }
 
 class Book {
@@ -58,8 +58,8 @@ class Book {
     return totalPrice;
   }
 
-  checkSend(int pages, int qty) {
-    String message = (pages >= 100) ? "ค่าจัดส่ง: ${qty + 10} บาท" : "ส่งฟรี";
+  checkSend(int qty) {
+    String message = (pages! >= 100) ? "ค่าจัดส่ง: ${qty * 10} บาท" : "ส่งฟรี";
     print(message);
   }
 }
