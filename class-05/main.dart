@@ -23,11 +23,28 @@ void main() {
   // print(person_1.name);
   // print(person_1.gender);
   ////////////////////////
-  var bk = Book();
-  bk.setBookData("Bitcoin", 20, "Prayut", 200);
-  bk.changeAuthor("John Doe");
-  print("รวมคารวม คือ :::${bk.checkBookPrice(20)} บาท");
-  bk.checkSend(5);
+  // var bk = Book();
+  // bk.setBookData("Bitcoin", 20, "Prayut", 200);
+  // bk.changeAuthor("John Doe");
+  // print("รวมคารวม คือ :::${bk.checkBookPrice(20)} บาท");
+  // bk.checkSend(5);
+
+  var myCar = Car();
+  myCar.serCarData(brand: "BWM", carPrice: 500, color: "Red");
+}
+
+class Car {
+  String? brand;
+  int? carPrice;
+  String? color;
+
+  serCarData({String? brand, int? carPrice, String? color}) {
+    this.brand = brand;
+    this.carPrice = carPrice;
+    this.color = color;
+
+    print("Brand::${brand} Carprice::${carPrice} Color::${color}");
+  }
 }
 
 class Book {
