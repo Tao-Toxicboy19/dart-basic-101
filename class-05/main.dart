@@ -16,7 +16,20 @@ void main() {
   animal_1.animalType = ("Kuk");
   animal_1.numberOfLeqs = (4);
   var test_object = {animal_1.viewData(), animal_1.checkInsect()};
-  print(test_object);
+  //////////////
+  var person_1 = Person();
+  person_1.personName("Prayut","test");
+  
+}
+
+class Person {
+  String? name;
+  String? gender;
+  bool? isMarry;
+  double? salary;
+
+  personName(String name, String gender) =>
+      {print("Name :: ${name} Gender :: ${gender}")};
 }
 
 class Animal {
