@@ -15,12 +15,33 @@ void main() {
   animal_1.animalName = ("Prayut");
   animal_1.animalType = ("Kuk");
   animal_1.numberOfLeqs = (4);
-  var test_object = {animal_1.viewData(), animal_1.checkInsect()};
+  // var test_object = {animal_1.viewData(), animal_1.checkInsect()};
   //////////////
   var person_1 = Person();
   person_1.personName("Prayut", "test");
-  print(person_1.name);
-  print(person_1.gender);
+  person_1.checkMarry(true);
+  // print(person_1.name);
+  // print(person_1.gender);
+  /////////////////////
+}
+
+class Book {
+  String? title;
+  int? pages;
+  String? author;
+  int? price;
+
+  setBookData(String title, int pages, String author, int price) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.price = price;
+    print("Add book data Success");
+    viewBook();
+  }
+
+  viewBook() => print(
+      "ชื่อหนังสือ ::${title} จำนวนหน้า ::${pages} ราคา :: ${price} ผู้แต่ง ::${author}");
 }
 
 class Person {
