@@ -18,8 +18,9 @@ void main() {
   var test_object = {animal_1.viewData(), animal_1.checkInsect()};
   //////////////
   var person_1 = Person();
-  person_1.personName("Prayut","test");
-  
+  person_1.personName("Prayut", "test");
+  print(person_1.name);
+  print(person_1.gender);
 }
 
 class Person {
@@ -28,8 +29,16 @@ class Person {
   bool? isMarry;
   double? salary;
 
-  personName(String name, String gender) =>
-      {print("Name :: ${name} Gender :: ${gender}")};
+  personName(String name, String gender) {
+    this.name = name;
+    this.gender = gender;
+    print("Name :: ${name} Gender :: ${gender}");
+  }
+
+  checkMarry(bool isMarry) {
+    this.isMarry;
+    (isMarry) ? print("แต่งงานแล้ว") : print("ยัง");
+  }
 }
 
 class Animal {
