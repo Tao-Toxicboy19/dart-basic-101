@@ -17,12 +17,14 @@ void main() {
   animal_1.numberOfLeqs = (4);
   // var test_object = {animal_1.viewData(), animal_1.checkInsect()};
   //////////////
-  var person_1 = Person();
-  person_1.personName("Prayut", "test");
-  person_1.checkMarry(true);
+  // var person_1 = Person();
+  // person_1.personName("Prayut", "test");
+  // person_1.checkMarry(true);
   // print(person_1.name);
   // print(person_1.gender);
-  /////////////////////
+  ////////////////////////
+  var book = Book();
+  book.setBookData("Bitcoin", 20, "Prayut", 200);
 }
 
 class Book {
