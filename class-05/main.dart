@@ -1,5 +1,3 @@
-import 'dart:math';
-
 void main() {
   Student std_1 = Student();
   std_1.name = ("John");
