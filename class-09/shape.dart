@@ -4,10 +4,11 @@ class Triangle extends Shape {
 
   Triangle(this._baseLength, this._height);
 
-  setData(double x, double y) {
-    _height = x;
-    _baseLength = y;
-  }
+  set he(double height) => this._height = height;
+  set ba(double baseLength) => this._baseLength = baseLength;
+
+  double get height => _height;
+  double get baseLength => _baseLength;
 
   @override
   area() {
