@@ -6,5 +6,15 @@ void main() {
 
   Triangle triangle = Triangle(5.0, 4.0);
   triangle.viewData();
-  triangle.setData(50, 50);
+
+  print("ความยาวด้านฐาน: ${triangle.baseLength}");
+  print("ความสูง: ${triangle.height}");
+
+  triangle.baseLength = 7.0;
+  triangle.height = 6.0;
+
+  print("ความยาวด้านฐานใหม่: ${triangle.baseLength}");
+  print("ความสูงใหม่: ${triangle.height}");
+
+  triangle.viewData();
 }

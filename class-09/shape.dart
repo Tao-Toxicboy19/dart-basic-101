@@ -4,19 +4,19 @@ class Triangle extends Shape {
 
   Triangle(this._baseLength, this._height);
 
-  set he(double height) => this._height = height;
-  set ba(double baseLength) => this._baseLength = baseLength;
+  set height(double height) => this._height = height;
+  set baseLength(double baseLength) => this._baseLength = baseLength;
 
   double get height => _height;
   double get baseLength => _baseLength;
 
   @override
-  area() {
+  double area() {
     return (_baseLength * _height) / 2;
   }
 
   @override
-  viewData() {
+  void viewData() {
     print("ความยาวด้านฐานของสามเหลี่ยม: $_baseLength");
     print("ความสูงของสามเหลี่ยม: $_height");
     print("พื้นที่ของสามเหลี่ยม: ${area()}");
